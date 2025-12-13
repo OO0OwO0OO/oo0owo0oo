@@ -1,0 +1,35 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    {% for item in site.navigation %}
+                    <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.codecademy.com/profiles/{{ site.codecademy_username }}" target="_blank" rel="noopener noreferrer" aria-label="Codecademy">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Repository</h3>
+                <a href="{{ site.repository_url }}" target="_blank" rel="noopener noreferrer" class="repo-link">
+                    <i class="fab fa-github"></i> View Source Code
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ 'now' | date: "%Y" }} Personal Portfolio. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+

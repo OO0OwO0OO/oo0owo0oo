@@ -1,0 +1,36 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="{{ '/images/profile.jpg' | relative_url }}" alt="Profile Photo" class="profile-image" id="profileImage">
+                <div class="image-placeholder" id="imagePlaceholder">
+                    <i class="fas fa-user"></i>
+                    <p>Add your profile photo</p>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p class="lead">
+                    I'm a student passionate about information systems and web development. 
+                    This website showcases my journey, projects, and achievements in the field 
+                    of technology and programming.
+                </p>
+                <p>
+                    Through this portfolio, you'll discover my background, the projects I've 
+                    worked on, and my continuous learning in the world of information systems. 
+                    Feel free to explore and connect!
+                </p>
+                <div class="cta-buttons">
+                    <a href="{{ '/about.html' | relative_url }}" class="btn btn-primary">Learn More About Me</a>
+                    <a href="{{ '/projects.html' | relative_url }}" class="btn btn-secondary">View My Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

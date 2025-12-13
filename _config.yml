@@ -1,0 +1,39 @@
+# Site Settings
+title: Personal Portfolio
+description: A personal portfolio website showcasing projects and achievements
+author: Your Name
+email: your.email@example.com
+
+# GitHub Pages Settings
+baseurl: "" # the subpath of your site, e.g. /site1101
+url: "" # the base hostname & protocol for your site, e.g. https://yourusername.github.io
+
+# Build Settings
+markdown: kramdown
+# Custom site - no theme required
+
+# Navigation
+navigation:
+  - name: Home
+    url: /
+  - name: About
+    url: /about.html
+  - name: Projects
+    url: /projects.html
+  - name: Resume
+    url: /resume.html
+
+# Social Links
+github_username: yourusername
+codecademy_username: yourusername
+repository_url: https://github.com/yourusername/oo0owo0oo
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore
+

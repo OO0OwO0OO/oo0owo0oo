@@ -1,0 +1,23 @@
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">
+            <a href="{{ '/' | relative_url }}">Portfolio</a>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            {% for item in site.navigation %}
+            <li>
+                <a href="{{ item.url | relative_url }}" 
+                   {% if page.url == item.url or (item.url == '/' and (page.url == '/' or page.url == '/index.html')) or (item.url != '/' and page.url contains item.url) %}class="active"{% endif %}>
+                    {{ item.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
