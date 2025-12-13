@@ -1,5 +1,21 @@
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
+    // Video background setup
+    const bgVideo = document.getElementById('bg-video');
+    if (bgVideo) {
+        bgVideo.addEventListener('loadeddata', function() {
+            this.play().catch(function(error) {
+                // Auto-play was prevented, handle gracefully
+                console.log('Video autoplay prevented:', error);
+            });
+        });
+        
+        // Pause video on mobile to save bandwidth (optional)
+        if (window.innerWidth < 768) {
+            bgVideo.pause();
+        }
+    }
+    
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
 

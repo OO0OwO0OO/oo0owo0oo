@@ -23,6 +23,62 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.85) 100%);
+    z-index: 1;
+}
+
+/* Darker overlay for better text readability on sections */
+.hero,
+.page-header,
+.about-section,
+.projects-section,
+.resume-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+/* Ensure content is above video */
+.navbar,
+.main-content,
+.footer {
+    position: relative;
+    z-index: 10;
 }
 
 .container {
