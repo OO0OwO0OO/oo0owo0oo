@@ -1,8 +1,8 @@
 # Site Settings
 title: Personal Portfolio
 description: A personal portfolio website showcasing projects and achievements
-author: Your Name
-email: your.email@example.com
+author: Said Adilov
+email: edilovseid@gmail.com
 
 # GitHub Pages Settings
 baseurl: "" # the subpath of your site, e.g. /site1101
@@ -24,9 +24,9 @@ navigation:
     url: /resume.html
 
 # Social Links
-github_username: yourusername
-codecademy_username: yourusername
-repository_url: https://github.com/yourusername/oo0owo0oo
+github_username: OO0OwO0OO
+codecademy_username: net7918132430
+repository_url: https://github.com/OO0OwO0OO/oo0owo0oo
 
 # Exclude from processing
 exclude:
