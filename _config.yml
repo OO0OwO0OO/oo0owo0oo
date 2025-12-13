@@ -5,8 +5,10 @@ author: Said Adilov
 email: edilovseid@gmail.com
 
 # GitHub Pages Settings
-baseurl: "" # the subpath of your site, e.g. /site1101
-url: "" # the base hostname & protocol for your site, e.g. https://yourusername.github.io
+# If your site is at username.github.io/oo0owo0oo, use baseurl: "/oo0owo0oo"
+# If your site is at username.github.io (main repo), use baseurl: ""
+baseurl: "/oo0owo0oo"
+url: "https://OO0OwO0OO.github.io"
 
 # Build Settings
 markdown: kramdown
@@ -27,6 +29,12 @@ navigation:
 github_username: OO0OwO0OO
 codecademy_username: net7918132430
 repository_url: https://github.com/OO0OwO0OO/oo0owo0oo
+
+# Include static files
+include:
+  - css
+  - js
+  - images
 
 # Exclude from processing
 exclude:
