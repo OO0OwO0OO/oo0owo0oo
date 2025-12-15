@@ -184,7 +184,9 @@ body {
     height: auto;
     border-radius: 50%;
     box-shadow: var(--shadow-lg);
-    display: none;
+    object-fit: cover;
+    aspect-ratio: 1;
+    display: block;
 }
 
 .image-placeholder {
@@ -205,7 +207,9 @@ body {
     margin-bottom: 1rem;
 }
 
-.profile-image:not([src=""]) + .image-placeholder {
+/* Hide placeholder when image loads */
+.profile-image:not([src=""]) ~ .image-placeholder,
+.profile-image[src*="profile"] ~ .image-placeholder {
     display: none;
 }
 
